@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border:none;
+    background-color: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:blue;
+}
+p{
+    font-size:1.2rem;
+    line-height: 2rem;
+}
+.header{
+    border-bottom:0.8px solid gray;
+    padding:0.8rem 2rem 0.8rem 2rem;
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index:5;
+    width:100%;
+    background-color:white;
+    top:0;
+    box-shadow:
+}
+.header img{
+    width:10rem;
+}
+.header .openSidebar{
+    width:4rem;
+    font-size:2.5rem;
+    background-color: white;
+
+}
+.sidebar{
+    background-color:white;
+    display:block;
+    width:100%;
+    color:white;
+    height:fit-content;
+    transform: translateY(0px);
+    transition: transform 2s ease-in-out;
+    float:right;
+    z-index:10;
+}
+.close{
+    display:none;
+    transform:translateY(50px)
+}
+ul{
+    border-bottom: 1px solid black;
+    color:black;
+    list-style-type:none;
+    text-align: right;
+}
+.sidebar a{
+    font-size:1.2rem;
+    line-height:2rem;
+    padding:0 10rem 0 10rem;
+}
+.content{
+    background:linear-gradient(180deg,rgba(89, 89, 233, 0.267), white);
+    height:fit-content;
+    margin:2rem;
+    border-radius: 8px;
+    font-family: poppins;
+    padding: 2rem 0 0 0;
+}
+.first{
+    text-align: center;
+    padding:0 20rem 0 20rem;
+}
+.getStarted{
+    border-radius:16px;
+    background: linear-gradient(90deg, blue 50%,rgb(2, 2, 65),rgb(7, 7, 26));
+    color:white;
+    font-size:1.3rem;
+    padding:0.5rem;
+    margin-top:1rem;
+}
+.demo{
+    border-radius:16px;
+    border:1px solid grey;
+    padding:0.5rem;
+    font-size:1.3rem;
+    color:black;
+    background:none;
+    margin-top:1rem;
+
+}
+/*arrow buton to hover at the bottom of the screen and take the user to the 
+top when clicked*/
+.go--up{
+    position:fixed;
+    right:1rem;
+    z-index: 10;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.651);
+    width:fit-content;
+    height:fit-content;
+    font-size:2.5rem;
+    bottom: 1rem;
+}
+.image01{
+    width: 40rem;
+    height:25rem;
+    display: block;
+    margin:2rem 0 2rem 0;
+}
