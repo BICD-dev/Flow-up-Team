@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins;
 }
 
 button{
@@ -19,7 +20,7 @@ p{
 }
 .header{
     border-bottom:0.8px solid gray;
-    padding:0.8rem 2rem 0.8rem 2rem;
+    padding:0.5rem 10rem 0.5rem 10rem;
     display:flex;
     justify-content: space-between;
     position:fixed;
@@ -27,7 +28,6 @@ p{
     width:100%;
     background-color:white;
     top:0;
-    box-shadow:
 }
 .header img{
     width:10rem;
@@ -65,34 +65,44 @@ ul{
     padding:0 10rem 0 10rem;
 }
 .content{
-    background:linear-gradient(180deg,rgba(89, 89, 233, 0.267), white);
+    background:linear-gradient(180deg,#eaeefa, white);
     height:fit-content;
-    margin:2rem;
-    border-radius: 8px;
+    margin:8rem 10rem;
+    border-radius: 2rem;
     font-family: poppins;
     padding: 2rem 0 0 0;
 }
 .first{
     text-align: center;
-    padding:0 20rem 0 20rem;
+}
+.first h1{
+    font-weight:600;
+    font-size:xx-large;
 }
 .getStarted{
     border-radius:16px;
     background: linear-gradient(90deg, blue 50%,rgb(2, 2, 65),rgb(7, 7, 26));
     color:white;
-    font-size:1.3rem;
+    font-size:1.2rem;
     padding:0.5rem;
     margin-top:1rem;
+}
+.getStarted:hover{
+    background: rgb(0, 89, 255);
 }
 .demo{
     border-radius:16px;
     border:1px solid grey;
     padding:0.5rem;
-    font-size:1.3rem;
+    font-size:1.2rem;
     color:black;
     background:none;
     margin-top:1rem;
 
+}
+.demo:hover{
+    color:white;
+    background-color: orangered;
 }
 /*arrow buton to hover at the bottom of the screen and take the user to the 
 top when clicked*/
@@ -108,8 +118,74 @@ top when clicked*/
     bottom: 1rem;
 }
 .image01{
-    width: 40rem;
-    height:25rem;
+    max-width: 40rem;
+    max-height:25rem;
     display: block;
-    margin:2rem 0 2rem 0;
+    margin:2rem 8rem 2rem 0rem;
+}
+.img{
+    height:5rem;
+    width:8rem
+}
+.logo--display{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    margin:1rem 1.5rem 1rem 1.5rem;
+    grid-gap:1rem;
+
+}
+.second--content{
+    margin:2rem 0rem 0rem 0rem;
+    
+
+
+}
+.second--content--grid{
+    border:0.1px solid rgba(128, 128, 128, 0.205);
+    border-radius:20px;
+    padding:1rem;
+    margin:1.5rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:2rem;
+    background-color: white;
+}
+.second--content--img{
+    border-radius:2rem;
+    height:30rem;
+    width:30rem;
+}
+.third--content{
+    margin:1.5rem;
+
+
+}
+.one{
+    grid-area:one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area:four;
+}
+.third--content--grid--cover{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:"one two three" 
+                        "four four four";
+    grid-gap: 2rem;
+    margin-top:1.5rem;
+
+}
+.third--content--grid{
+    background-color:white;
+    font-weight:bold;
+    font-size:3rem;
+    padding:2rem;
+    border:1px solid rgba(128, 128, 128, 0.205);
+    border-radius:1rem;
 }
